@@ -15,7 +15,7 @@ process.stdin.on('readable',function() {
 				process.stdout.write('Quitting app!\n')
 				break
 			case '/getOSinfo':
-				var OSinfo = require('./modules/OSInfo');
+				var OSinfo = require('./modules/OSInfo')
 				var time = require('./modules/recal')
             	OSinfo.print()
             	time.getUptime()
